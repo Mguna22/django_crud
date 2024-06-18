@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.employee_create{
+    height: 100vh;
+}
+.employee_create h1{
+    text-align: center;
+    background-color: rgb(143, 242, 242);
+    text-transform: uppercase;
+    color: rgb(48, 61, 246);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+.employee_create form{
+    border: 2px solid black;
+    width: 500px;
+    margin: 100px auto 0 auto;
+    /* padding: 30px 30px 0px 30px; */
+    border-radius: 10px;
+}
+.employee_create form div{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.employee_create form div label{
+    font-size: 1.5em;
+}
+.employee_create form div input{
+    /* padding: 5px; */
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 5px;
+}
+.employee_create form div select{
+    border-radius: 5px;
+    border-width: 2px;
+    width: 57%;
+    text-align: center;
+    font-size: 1.2em;   
+}
+
+.employee_create form div:last-child input{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+.employee_create form div:last-child input:hover{
+    cursor: pointer;
+}
+.employee_create form div:last-child a{
+    background-color: red;
+    font-size: 1.5em;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.employee_create form div:last-child input:active,
+.employee_create form div:last-child a:active{
+    transform: scale(.9);
+}
+.employee_list{
+    height: 100vh;
+}
+
+.employee_list h1{
+    text-align: center;
+    background-color: rgb(143, 242, 242);
+    text-transform: uppercase;
+    color: rgb(48, 61, 246);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+.employee_list div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    top: 30%;
+    right: 30%;
+    font-size: 1.8em;
+    border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    text-align: center;
+    transition: all .5s;
+}
+.employee_list div a:hover{
+    background-color: lightskyblue;
+}
+.employee_list div a:active{
+    transform: scale(.95);
+}
+.employee_list ul{
+    margin: 20px;
+}
+.employee_list ul li{
+    list-style-type: none;
+}
+.employee_list ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    min-width: 500px;
+    color: blueviolet;
+    transition: all .3s;
+    text-align: center;
+    border-radius: 5px;
+}
+.employee_list ul li a:hover{
+    background-color: blueviolet;
+    color: bisque;
+}
+.employee_list ul li a:active{
+    transform: scale(.9);
+}
+.employee_edit{
+    height: 100vh;
+}
+.employee_edit h1{
+    text-align: center;
+    background-color: rgb(143, 242, 242);
+    text-transform: uppercase;
+    color: rgb(48, 61, 246);
+    padding: 20px 0;
+}
+.employee_edit form{
+    border: 2px solid black;
+    width: 500px;
+    margin: 100px auto 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+.employee_edit form div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.employee_edit form div label{
+    font-size: 1.5em;
+}
+.employee_edit form div input{
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 5px;
+}
+.employee_edit form div:last-child a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4em;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+
+} 
+.employee_edit form div select{
+    border-radius: 5px;
+    border-width: 3px;
+    width: 62%;
+    text-align: center;
+    font-size: 1.2em;
+}
+.employee_edit form div:last-child input{
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+.employee_edit form div:last-child .cancel{
+    background-color: blue;
+    color: white;
+}
+.employee_edit form div:last-child .delete{
+    background-color: red;
+    color: white;
+}
+.employee_edit form div:last-child input:hover{
+    cursor: pointer;
+}
+.employee_edit form div:last-child input:active,
+.employee_edit form div:last-child a:active{
+    transform: scale(.9);
+}
+.employee_detail{
+    height: 100vh;
+}
+.employee_detail h1{
+    text-align: center;
+    background-color: rgb(143, 242, 242);
+    text-transform: uppercase;
+    color: rgb(48, 61, 246);
+    padding: 20px 0;
+}
+.employee_detail div{
+    margin: 30px;
+}
+.employee_detail div p{
+    padding: 20px;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.employee_detail div a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0 40px 0 20px;
+    border-radius: 10px;
+}
+.employee_detail a:first-child{
+    background-color: rgb(35, 35, 235);
+    color: white;
+}
+.employee_detail div a:last-child{
+    background-color: rgb(235, 35, 38);
+    color: white;
+}
+.employee_detail div a:active{
+    transform: scale(.9);
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 100vh;
+}
+
+
+.error h1{
+    color: white;
+    font-size: 100px;
+}

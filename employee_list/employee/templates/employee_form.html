@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Uploading Employee Data
+{% endblock %}
+
+{% block content %}
+    <div class="employee_create">
+        <h1>Create Employee Record</h1>
+    <form action = "{% url 'upload' %}" method="post" autocomplete="off">
+        {% csrf_token %}
+        {{form}}
+        <div>
+            <input type="submit" value="create">
+            <a href="{% url 'list_of_employee'%}">cancel</a>
+        </div>
+    </form>
+    </div>
+{% endblock %}

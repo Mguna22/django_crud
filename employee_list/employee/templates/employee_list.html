@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    List of Employees
+{% endblock %}
+
+{% block content %}
+    <div class="employee_list">
+        <h1>List of Employees</h1>
+        <div><a href="{% url 'create' %}">create new record</a></div>
+        {% if total_record != 110 %}
+            <ul>
+                {%for single_record in all_record%}
+                    <li><a href="{% url 'detail_of_employee' single_record.id %}">{{single_record.fullname}}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <ul>
+                <li><a href="#">No records in data base</a></li>
+            </ul>
+        {% endif %}
+    </div>
+{% endblock %}
+

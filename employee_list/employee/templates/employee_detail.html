@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Detail of a Employee
+{% endblock %}
+
+{% block content %}
+
+<div class="employee_detail">
+    <h1>Detail of Employee</h1>
+    <div>
+        <p>Name: {{single_record.fullname}}</p>
+        <p>Employee Id: {{single_record.emp_no}}</p>
+        <p>Phone on: {{single_record.phone}}</p>
+        <p>position: {{single_record.position}}</p>
+    </div>
+    <div>
+        <a href="{% url 'list_of_employee'%}">Back</a>
+        <a href="{% url 'update_data' single_record.id %}">Edit</a>
+    </div>
+</div>
+
+{% endblock %}

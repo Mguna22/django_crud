@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update of a Employee Data
+{% endblock %}
+
+{% block content %}
+<div class="employee_edit">
+    <h1>Edit Form</h1>
+    <form action="{% url 'update_data' exit_record.id %}" method="post" autocomplete="off">
+        {% csrf_token %}
+        {{old_data}}
+        <div>
+            <input type="submit" value="submit">
+            <a class="cancel" href="{% url 'detail_of_employee' exit_record.id %}">Cancel</a>
+            <a class="delete" href="{% url 'delete_data' exit_record.id %}">Delete</a>
+        </div>
+    </form>
+
+</div>
+{% endblock %}
