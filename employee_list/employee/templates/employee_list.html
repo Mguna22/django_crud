@@ -8,7 +8,7 @@
     <div class="employee_list">
         <h1>List of Employees</h1>
         <div><a href="{% url 'create' %}">create new record</a></div>
-        {% if total_record != 110 %}
+        {% if total_record != 0 %}
             <ul>
                 {%for single_record in all_record%}
                     <li><a href="{% url 'detail_of_employee' single_record.id %}">{{single_record.fullname}}</a></li>
